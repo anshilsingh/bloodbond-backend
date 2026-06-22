@@ -34,9 +34,11 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-vnsh@u)%p*=$)77rj-ai_522&+i1pw$vmfy)1-7xo=q18ka7=m'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ["*"]
+ALLOWED_HOSTS = ["bloodbond-backend.onrender.com",
+    "localhost",
+    "127.0.0.1"]
 
 
 # Application definition
