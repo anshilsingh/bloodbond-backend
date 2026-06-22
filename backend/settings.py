@@ -36,7 +36,7 @@ SECRET_KEY = 'django-insecure-vnsh@u)%p*=$)77rj-ai_522&+i1pw$vmfy)1-7xo=q18ka7=m
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
@@ -53,6 +53,10 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 ]
 
+MIDDLEWARE = [
+    "whitenoise.middleware.WhiteNoiseMiddleware",
+    ...
+]
 MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
